@@ -15,11 +15,18 @@ nav {
   margin: 0;
   padding: 5px;
   text-align: center;
+  position: fixed;
+  z-index: 1;
 }
 
 nav img {
   width: 30px;
   height: 30px;
+}
+
+main {
+  position: relative;
+  top: 40px;
 }
 
 .intro {
@@ -41,6 +48,31 @@ img {
   height: 100%;
 }
 
+.picture {
+  position: relative;
+  z-index: 0;
+}
+
+.picture-description {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  
+}
+
+/* .lake {
+  position:relative;
+} */
+
+.mountains, .sea {
+  position: relative;
+  left: 450px;
+}
+
+/* .tree {
+position:relative;
+} */
+
 .travel {
   width: 150px;
   height: 40px;
@@ -52,6 +84,9 @@ img {
   background-color: #5c7f3b;
   border: 2px solid #4b7d1c;
   box-shadow: 0 0 10px 0px #172d0394;
+  position: sticky;
+  top: 50px;
+  z-index: 1;
 }
 
 .chat {
@@ -60,6 +95,9 @@ img {
   background-color: #5c7f3b;
   border-radius: 50%;
   padding: 15px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
 }
 
 /* ---Your code starts here--- */
